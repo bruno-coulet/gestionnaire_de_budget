@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+budget_procedural.py
 
 # C extensions
 *.so
