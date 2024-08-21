@@ -1,0 +1,16 @@
+from budget import GestionnaireBudget
+mesdepenses = GestionnaireBudget(2000)
+print(f"\nSomme disponible : {mesdepenses.disponible}\n")
+print(f"Dictionnaire des dépenses : {mesdepenses.depenses}\n")
+print(f"Dictionnaire des budgets prévisionnel : {mesdepenses.budgets}\n")
+mesdepenses.budget_ajout("location", 700)
+mesdepenses.budget_ajout("courses", 400)
+mesdepenses.budget_ajout("factures", 300)
+mesdepenses.budget_ajout("divertissement", 100)
+print(f"Dictionnaire des budgets prévisionnels{mesdepenses.budgets}\n")
+mesdepenses.depense("courses", 35)
+mesdepenses.afficher_resume()
+
+mesdepenses = GestionnaireBudget(2500)
+mesdepenses.budget_ajout("courses", 500)
+mesdepenses.afficher_resume()
